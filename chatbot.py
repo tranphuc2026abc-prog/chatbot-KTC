@@ -91,7 +91,7 @@ except Exception as e:
     st.error(f"Lỗi khi cấu hình API Groq: {e}")
     st.stop()
 
-MODEL_NAME = 'llama-3.3-70b-versatile'
+MODEL_NAME = 'llama-3.1-405b-instruct'
 # PDF_DIR = "./PDF_KNOWLEDGE" # <-- RAG ĐÃ TẮT
 
 # --- BƯỚC 4: CẤU HÌNH TRANG VÀ CSS ---
@@ -301,4 +301,5 @@ if prompt:
     # 4. Rerun nếu bấm nút
     if prompt_from_button:
         st.rerun()
+
 
